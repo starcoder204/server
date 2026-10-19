@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --progress --hide-modules --config webpack.prod.js",
-    "dev": "NODE_ENV=development webpack --progress --config webpack.dev.js",
+    "dev": "node api.js && NODE_ENV=development webpack --progress --config webpack.dev.js",
     "watch": "NODE_ENV=development webpack --progress --watch --config webpack.dev.js",
     "lint:fix": "ESLINT_FIX=true webpack --progress --config webpack.dev.js",
     "lint:fix-watch": "ESLINT_FIX=true webpack --progress --watch --config webpack.dev.js",
@@ -48,7 +48,7 @@
     "debounce": "^1.2.0",
     "dompurify": "^2.0.8",
     "escape-html": "^1.0.3",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.10",
     "jcrop": "git+https://github.com/ChristophWurst/Jcrop.git#v0.9.12-npm3",
     "jquery": "2.1.4",
     "jquery-migrate": "^1.4.1",
