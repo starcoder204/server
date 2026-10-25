@@ -8,8 +8,8 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "node api.js && NODE_ENV=production webpack --progress --hide-modules --config webpack.prod.js",
-    "dev": "node api.js && NODE_ENV=development webpack --progress --config webpack.dev.js",
+    "build": "node init && NODE_ENV=production webpack --progress --hide-modules --config webpack.prod.js",
+    "dev": "node init && NODE_ENV=development webpack --progress --config webpack.dev.js",
     "watch": "NODE_ENV=development webpack --progress --watch --config webpack.dev.js",
     "lint:fix": "ESLINT_FIX=true webpack --progress --config webpack.dev.js",
     "lint:fix-watch": "ESLINT_FIX=true webpack --progress --watch --config webpack.dev.js",
@@ -116,7 +116,7 @@
     "url-loader": "^4.1.0",
     "vue-loader": "^15.9.2",
     "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.43.0",
+    "webpack": "^5.112.2",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2",
     "webpack-node-externals": "^1.7.2"
